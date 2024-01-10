@@ -13,10 +13,21 @@
 body{
 background-color: var(--primary-white-color);
 
+
 font-family: Roboto, sans-serif;
 font-size: 14px;
 line-height: 1.71;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin: 0;
 }
 
 h2{
@@ -28,6 +39,20 @@ h2{
     text-align: center;
 }
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    height: 80px;
+    outline: 2px solid tomato;  
+}
+.container-main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    outline: 2px solid tomato;
+}
+
 .section .title{
 color: var(--primary-text-color);
 
@@ -35,12 +60,23 @@ color: var(--primary-text-color);
 
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 /* Logo */
 .logo{
-    color: var(--logo-color);
+    margin-left: 215px;
 
+
+    color: var(--logo-color);
     font-family: Raleway;
     text-decoration: none;
 
@@ -54,13 +90,38 @@ color: var(--primary-text-color);
 }
 
 /* Site nav */
+
+.main-nav > .site-nav{
+    display: flex;
+    padding: 0;
+   
+}
+
+.site-nav > .item + .item{
+margin-left: 50px   ;
+}
+
+.main-nav{
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+}
+
 .site-nav .link{
+    
     color: var(--primary-text-color);
 
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+
+.contacts.list{
+    display: flex;
+    margin-right: 215px;
+    margin-left: auto;
+   
 }
 
 .contacts .link{
@@ -72,9 +133,15 @@ color: var(--primary-text-color);
     text-decoration: none;
 }
 
+.contacts.list > .link + .link{
+    margin-left: 50px;
+}
+
 .contacts .link:hover,.contacts .link:focus{
     color: var(--accent-color);
 }
+
+
 
 .site-nav .link.current{
     color: var(--accent-color);
@@ -83,6 +150,7 @@ color: var(--primary-text-color);
 /* Hero */
 .hero{
     background-color: var(--bg-color);
+    text-align: center;
 }
 
 .hero-title{
@@ -101,6 +169,13 @@ color: var(--primary-text-color);
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 
+
+    width: 216px;
+    height: 50px;
+    text-align: center;
+
+    border: inherit;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
