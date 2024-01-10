@@ -40,28 +40,28 @@
         <button class="button" type="button">Замовити послугу</button>
       </section>
       <!-- Features -->
-      <section class="section">
-        <div class="container-main">
+      <section class="section features">
+        <div class="container">
           <ul class="feature-list">
-            <li>
+            <li class="item">
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="description">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="description">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="description">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -71,11 +71,11 @@
         </div>
       </section>
       <!-- What do we do? -->
-      <section class="section">
-        <div class="container-main">
+      <section class="section examples">
+        <div class="container">
           <h2 class="title">Чим ми займаємось</h2>
           <ul class="communicate-list">
-            <li>
+            <li class="item">
               <img
                 height="294"
                 width="370"
@@ -83,7 +83,7 @@
                 alt="A person is typing on a tablet"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 height="294"
                 width="370"
@@ -91,7 +91,7 @@
                 alt="Holds the phone in his hand and looks at other phones on the laptop"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 height="294"
                 width="370"
@@ -103,30 +103,46 @@
         </div>
       </section>
       <!-- Our team -->
-      <section class="section">
-        <div class="container-main">
+      <section class="section team">
+        <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
-            <li>
-              <img height="260" width="270" src="./images/our-team-1.jpg" alt="Ігор Дем'яненко" />
+            <li class="item">
+              <img height="260" width="270" src="./images/our-team-3.jpg" alt="Ігор Дем'яненко" />
               <h3 class="title">Ігор Дем'яненко</h3>
-              <p>Product Designer</p>
+              <p class="description">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img height="260" width="270" src="./images/our-team-2.jpg" alt="Ольга Рєпіна" />
               <h3 class="title">Ольга Рєпіна</h3>
-              <p>Frontend Developer</p>
+              <p class="description">Frontend Developer</p>
             </li>
-            <li>
-              <img height="260" width="270" src="./images/our-team-3.jpg" alt="Микола Тарасов" />
+            <li class="item">
+              <img height="260" width="270" src="./images/our-team-1.jpg" alt="Микола Тарасов" />
               <h3 class="title">Микола Тарасов</h3>
-              <p>Marketing</p>
+              <p class="description">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img height="260" width="270" src="./images/our-team-4.jpg" alt="Михайло Єрмаков" />
               <h3 class="title">Михайло Єрмаков</h3>
-              <p>UI Designer</p>
+              <p class="description">UI Designer</p>
             </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Clients -->
+      <section class="section clients">
+        <div class="container">
+          <h2 class="title">Постійні клієнти</h2>
+          <ul class="client-list list">
+            <li class="item"><img class="logo" src="./images/logo-1.svg" alt="logo company" /></li>
+            <li class="item"><img class="logo" src="./images/logo-2.svg" alt="logo company" /></li>
+            <li class="item"><img class="logo" src="./images/logo-3.svg" alt="logo company" /></li>
+            <li class="item">
+              <img class="logo specific" src="./images/logo-4.svg" alt="logo company" />
+            </li>
+            <li class="item"><img class="logo" src="./images/logo-5.svg" alt="logo company" /></li>
+            <li class="item"><img class="logo" src="./images/logo-6.svg" alt="logo company" /></li>
           </ul>
         </div>
       </section>
@@ -135,13 +151,24 @@
     <footer class="footer">
       <div class="container">
         <a class="footer-logo" href="/index.html"><span class="logo-word">Web</span>Studio</a>
-        <address class="address">
-          <p class="street">м. Київ, пр-т Лесі Українки, 26</p>
-          <div class="contacts list">
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="address-social">
+          <address class="address">
+            <p class="street item">м. Київ, пр-т Лесі Українки, 26</p>
+            <div class="contacts list">
+              <a class="link item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link item" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
+          </address>
+          <div class="social">
+            <p class="description">приєднуйтесь</p>
+            <ul class="social-list list">
+              <li class="item"><img width="44px" height="44px" src="" alt="" /></li>
+              <li class="item"><img width="44px" height="44px" src="" alt="" /></li>
+              <li class="item"><img width="44px" height="44px" src="" alt="" /></li>
+              <li class="item"><img width="44px" height="44px" src="" alt="" /></li>
+            </ul>
           </div>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
